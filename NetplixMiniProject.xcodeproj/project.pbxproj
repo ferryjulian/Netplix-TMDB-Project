@@ -1,0 +1,989 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E0630812009D1749FA4D0EB /* Pods_NetplixMiniProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1683AEECEDE699EA82B5F67 /* Pods_NetplixMiniProjectTests.framework */; };
+		9816B8E82A94DBA300E98B9A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9816B8E72A94DBA300E98B9A /* HomeViewModel.swift */; };
+		9816B8EB2A94E1AF00E98B9A /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9816B8EA2A94E1AF00E98B9A /* DetailViewModel.swift */; };
+		9816B8ED2A94E1BE00E98B9A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9816B8EC2A94E1BE00E98B9A /* DetailViewController.swift */; };
+		9816B8F42A94FB8100E98B9A /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9816B8F32A94FB8100E98B9A /* DetailViewController.xib */; };
+		98CB53952A94514400E968CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53942A94514400E968CB /* AppDelegate.swift */; };
+		98CB53972A94514400E968CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53962A94514400E968CB /* SceneDelegate.swift */; };
+		98CB53992A94514400E968CB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53982A94514400E968CB /* HomeViewController.swift */; };
+		98CB539E2A94514500E968CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CB539D2A94514500E968CB /* Assets.xcassets */; };
+		98CB53A12A94514500E968CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98CB539F2A94514500E968CB /* LaunchScreen.storyboard */; };
+		98CB53AC2A94514600E968CB /* NetplixMiniProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53AB2A94514600E968CB /* NetplixMiniProjectTests.swift */; };
+		98CB53B62A94514600E968CB /* NetplixMiniProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53B52A94514600E968CB /* NetplixMiniProjectUITests.swift */; };
+		98CB53B82A94514600E968CB /* NetplixMiniProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53B72A94514600E968CB /* NetplixMiniProjectUITestsLaunchTests.swift */; };
+		98CB53CB2A9454FC00E968CB /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53CA2A9454FC00E968CB /* APICall.swift */; };
+		98CB53CD2A9456C600E968CB /* MovieServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53CC2A9456C600E968CB /* MovieServices.swift */; };
+		98CB53CF2A94571D00E968CB /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53CE2A94571D00E968CB /* Review.swift */; };
+		98CB53D12A94572900E968CB /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53D02A94572900E968CB /* Video.swift */; };
+		98CB53D32A94573A00E968CB /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53D22A94573A00E968CB /* Genre.swift */; };
+		98CB53D52A94574C00E968CB /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53D42A94574C00E968CB /* Movies.swift */; };
+		98CB53D92A94592500E968CB /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53D82A94592500E968CB /* UIView+Extensions.swift */; };
+		98CB53DB2A94593500E968CB /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53DA2A94593500E968CB /* UIImage+Extensions.swift */; };
+		98CB53DD2A94599D00E968CB /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53DC2A94599D00E968CB /* UIViewController+Extensions.swift */; };
+		98CB53DF2A9459B400E968CB /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53DE2A9459B400E968CB /* UITableView+Extensions.swift */; };
+		98CB53E12A9459C700E968CB /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53E02A9459C700E968CB /* UICollectionView+Extensions.swift */; };
+		98CB53E32A9459FF00E968CB /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53E22A9459FF00E968CB /* UIButton+Extensions.swift */; };
+		98CB53E52A945A0D00E968CB /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53E42A945A0D00E968CB /* UIColor+Extensions.swift */; };
+		98CB53E72A945A4B00E968CB /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53E62A945A4B00E968CB /* UIFont+Extensions.swift */; };
+		98CB53E92A945A6D00E968CB /* UIActivityIndicator+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53E82A945A6D00E968CB /* UIActivityIndicator+Extensions.swift */; };
+		98CB53EB2A945AD400E968CB /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53EA2A945AD400E968CB /* Double+Extensions.swift */; };
+		98CB53ED2A945AE900E968CB /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53EC2A945AE900E968CB /* CGFloat+Extensions.swift */; };
+		98CB53EF2A945B0600E968CB /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53EE2A945B0600E968CB /* Date+Extensions.swift */; };
+		98CB53F12A945B1700E968CB /* ViewState+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB53F02A945B1700E968CB /* ViewState+Extensions.swift */; };
+		98CB53F82A945BA900E968CB /* SF-Compact-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 98CB53F32A945BA900E968CB /* SF-Compact-Text-Semibold.otf */; };
+		98CB53F92A945BA900E968CB /* SF-Compact-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 98CB53F42A945BA900E968CB /* SF-Compact-Text-Bold.otf */; };
+		98CB53FA2A945BA900E968CB /* SF-Compact-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 98CB53F52A945BA900E968CB /* SF-Compact-Text-Heavy.otf */; };
+		98CB53FB2A945BA900E968CB /* SF-Compact-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 98CB53F62A945BA900E968CB /* SF-Compact-Text-Medium.otf */; };
+		98CB53FC2A945BA900E968CB /* SF-Compact-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 98CB53F72A945BA900E968CB /* SF-Compact-Text-Regular.otf */; };
+		98CB53FF2A945BB800E968CB /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 98CB53FE2A945BB800E968CB /* empty.json */; };
+		98CB54022A945C3F00E968CB /* ViewState+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB54012A945C3F00E968CB /* ViewState+Helper.swift */; };
+		98CB54052A945DDA00E968CB /* HomeMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB54042A945DDA00E968CB /* HomeMovieCell.swift */; };
+		98EA069E2A9752DD00C108AB /* DetailMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EA069D2A9752DD00C108AB /* DetailMovieCell.swift */; };
+		99AE7C03A00A887A07A91473 /* Pods_NetplixMiniProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F71636744DA01E3A7468C74 /* Pods_NetplixMiniProject.framework */; };
+		CC817CCFA91C8861ECED83D8 /* Pods_NetplixMiniProject_NetplixMiniProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3048807C9F406D0EACC33A /* Pods_NetplixMiniProject_NetplixMiniProjectUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98CB53A82A94514600E968CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98CB53892A94514400E968CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98CB53902A94514400E968CB;
+			remoteInfo = NetplixMiniProject;
+		};
+		98CB53B22A94514600E968CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98CB53892A94514400E968CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98CB53902A94514400E968CB;
+			remoteInfo = NetplixMiniProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24F2D068885BC444D0976878 /* Pods-NetplixMiniProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetplixMiniProjectTests.release.xcconfig"; path = "Target Support Files/Pods-NetplixMiniProjectTests/Pods-NetplixMiniProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		4FE2EC8A985A9480D931D0DB /* Pods-NetplixMiniProject-NetplixMiniProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetplixMiniProject-NetplixMiniProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-NetplixMiniProject-NetplixMiniProjectUITests/Pods-NetplixMiniProject-NetplixMiniProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6C58BC706275F07FCDA6806B /* Pods-NetplixMiniProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetplixMiniProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-NetplixMiniProjectTests/Pods-NetplixMiniProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F71636744DA01E3A7468C74 /* Pods_NetplixMiniProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetplixMiniProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9816B8E72A94DBA300E98B9A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		9816B8EA2A94E1AF00E98B9A /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		9816B8EC2A94E1BE00E98B9A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9816B8F32A94FB8100E98B9A /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		98CB53912A94514400E968CB /* NetplixMiniProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetplixMiniProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98CB53942A94514400E968CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98CB53962A94514400E968CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		98CB53982A94514400E968CB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		98CB539D2A94514500E968CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98CB53A02A94514500E968CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98CB53A22A94514500E968CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98CB53A72A94514600E968CB /* NetplixMiniProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetplixMiniProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98CB53AB2A94514600E968CB /* NetplixMiniProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetplixMiniProjectTests.swift; sourceTree = "<group>"; };
+		98CB53B12A94514600E968CB /* NetplixMiniProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetplixMiniProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98CB53B52A94514600E968CB /* NetplixMiniProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetplixMiniProjectUITests.swift; sourceTree = "<group>"; };
+		98CB53B72A94514600E968CB /* NetplixMiniProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetplixMiniProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		98CB53CA2A9454FC00E968CB /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		98CB53CC2A9456C600E968CB /* MovieServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServices.swift; sourceTree = "<group>"; };
+		98CB53CE2A94571D00E968CB /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		98CB53D02A94572900E968CB /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		98CB53D22A94573A00E968CB /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		98CB53D42A94574C00E968CB /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		98CB53D82A94592500E968CB /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		98CB53DA2A94593500E968CB /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		98CB53DC2A94599D00E968CB /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		98CB53DE2A9459B400E968CB /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		98CB53E02A9459C700E968CB /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		98CB53E22A9459FF00E968CB /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		98CB53E42A945A0D00E968CB /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		98CB53E62A945A4B00E968CB /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		98CB53E82A945A6D00E968CB /* UIActivityIndicator+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicator+Extensions.swift"; sourceTree = "<group>"; };
+		98CB53EA2A945AD400E968CB /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		98CB53EC2A945AE900E968CB /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		98CB53EE2A945B0600E968CB /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		98CB53F02A945B1700E968CB /* ViewState+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewState+Extensions.swift"; sourceTree = "<group>"; };
+		98CB53F32A945BA900E968CB /* SF-Compact-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Semibold.otf"; sourceTree = "<group>"; };
+		98CB53F42A945BA900E968CB /* SF-Compact-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Bold.otf"; sourceTree = "<group>"; };
+		98CB53F52A945BA900E968CB /* SF-Compact-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Heavy.otf"; sourceTree = "<group>"; };
+		98CB53F62A945BA900E968CB /* SF-Compact-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Medium.otf"; sourceTree = "<group>"; };
+		98CB53F72A945BA900E968CB /* SF-Compact-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Regular.otf"; sourceTree = "<group>"; };
+		98CB53FE2A945BB800E968CB /* empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty.json; sourceTree = "<group>"; };
+		98CB54012A945C3F00E968CB /* ViewState+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewState+Helper.swift"; sourceTree = "<group>"; };
+		98CB54042A945DDA00E968CB /* HomeMovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMovieCell.swift; sourceTree = "<group>"; };
+		98EA069D2A9752DD00C108AB /* DetailMovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieCell.swift; sourceTree = "<group>"; };
+		A1683AEECEDE699EA82B5F67 /* Pods_NetplixMiniProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetplixMiniProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCD47C0FC56136CB2279908 /* Pods-NetplixMiniProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetplixMiniProject.debug.xcconfig"; path = "Target Support Files/Pods-NetplixMiniProject/Pods-NetplixMiniProject.debug.xcconfig"; sourceTree = "<group>"; };
+		C936D14A85500B3454B3303B /* Pods-NetplixMiniProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetplixMiniProject.release.xcconfig"; path = "Target Support Files/Pods-NetplixMiniProject/Pods-NetplixMiniProject.release.xcconfig"; sourceTree = "<group>"; };
+		CD3048807C9F406D0EACC33A /* Pods_NetplixMiniProject_NetplixMiniProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetplixMiniProject_NetplixMiniProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48BA167B1876BC37FE11CB0 /* Pods-NetplixMiniProject-NetplixMiniProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetplixMiniProject-NetplixMiniProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-NetplixMiniProject-NetplixMiniProjectUITests/Pods-NetplixMiniProject-NetplixMiniProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98CB538E2A94514400E968CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99AE7C03A00A887A07A91473 /* Pods_NetplixMiniProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CB53A42A94514600E968CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E0630812009D1749FA4D0EB /* Pods_NetplixMiniProjectTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CB53AE2A94514600E968CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC817CCFA91C8861ECED83D8 /* Pods_NetplixMiniProject_NetplixMiniProjectUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8DDE06337C16ABA7D0E85401 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F71636744DA01E3A7468C74 /* Pods_NetplixMiniProject.framework */,
+				CD3048807C9F406D0EACC33A /* Pods_NetplixMiniProject_NetplixMiniProjectUITests.framework */,
+				A1683AEECEDE699EA82B5F67 /* Pods_NetplixMiniProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9816B8E92A94E17600E98B9A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				9816B8F52A94FC8B00E98B9A /* Cell */,
+				9816B8EC2A94E1BE00E98B9A /* DetailViewController.swift */,
+				9816B8F32A94FB8100E98B9A /* DetailViewController.xib */,
+				9816B8EA2A94E1AF00E98B9A /* DetailViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		9816B8F52A94FC8B00E98B9A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				98EA069D2A9752DD00C108AB /* DetailMovieCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		98CB53882A94514400E968CB = {
+			isa = PBXGroup;
+			children = (
+				98CB53932A94514400E968CB /* NetplixMiniProject */,
+				98CB53AA2A94514600E968CB /* NetplixMiniProjectTests */,
+				98CB53B42A94514600E968CB /* NetplixMiniProjectUITests */,
+				98CB53922A94514400E968CB /* Products */,
+				C8AFC9F51D4806ED13FD5110 /* Pods */,
+				8DDE06337C16ABA7D0E85401 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		98CB53922A94514400E968CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98CB53912A94514400E968CB /* NetplixMiniProject.app */,
+				98CB53A72A94514600E968CB /* NetplixMiniProjectTests.xctest */,
+				98CB53B12A94514600E968CB /* NetplixMiniProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98CB53932A94514400E968CB /* NetplixMiniProject */ = {
+			isa = PBXGroup;
+			children = (
+				98CB53D72A94584000E968CB /* Extensions */,
+				98CB53C82A94546100E968CB /* Model */,
+				98CB53C72A94544C00E968CB /* Features */,
+				98CB53C62A94544000E968CB /* Services */,
+				98CB53C52A94540300E968CB /* Resources */,
+				98CB53C42A94537B00E968CB /* Supporting */,
+			);
+			path = NetplixMiniProject;
+			sourceTree = "<group>";
+		};
+		98CB53AA2A94514600E968CB /* NetplixMiniProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				98CB53AB2A94514600E968CB /* NetplixMiniProjectTests.swift */,
+			);
+			path = NetplixMiniProjectTests;
+			sourceTree = "<group>";
+		};
+		98CB53B42A94514600E968CB /* NetplixMiniProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				98CB53B52A94514600E968CB /* NetplixMiniProjectUITests.swift */,
+				98CB53B72A94514600E968CB /* NetplixMiniProjectUITestsLaunchTests.swift */,
+			);
+			path = NetplixMiniProjectUITests;
+			sourceTree = "<group>";
+		};
+		98CB53C42A94537B00E968CB /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				98CB53942A94514400E968CB /* AppDelegate.swift */,
+				98CB53962A94514400E968CB /* SceneDelegate.swift */,
+				98CB539F2A94514500E968CB /* LaunchScreen.storyboard */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		98CB53C52A94540300E968CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				98CB53FD2A945BB800E968CB /* lottie */,
+				98CB53F22A945BA900E968CB /* fonts */,
+				98CB539D2A94514500E968CB /* Assets.xcassets */,
+				98CB53A22A94514500E968CB /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		98CB53C62A94544000E968CB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				98CB53C92A9454D400E968CB /* API */,
+				98CB53CC2A9456C600E968CB /* MovieServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		98CB53C72A94544C00E968CB /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				98CB53D62A94582F00E968CB /* Home */,
+				9816B8E92A94E17600E98B9A /* Detail */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		98CB53C82A94546100E968CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				98CB53CE2A94571D00E968CB /* Review.swift */,
+				98CB53D02A94572900E968CB /* Video.swift */,
+				98CB53D22A94573A00E968CB /* Genre.swift */,
+				98CB53D42A94574C00E968CB /* Movies.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		98CB53C92A9454D400E968CB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				98CB53CA2A9454FC00E968CB /* APICall.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		98CB53D62A94582F00E968CB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				98CB54032A945DB300E968CB /* Cell */,
+				98CB53982A94514400E968CB /* HomeViewController.swift */,
+				9816B8E72A94DBA300E98B9A /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		98CB53D72A94584000E968CB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				98CB54002A945C2500E968CB /* Helper */,
+				98CB53D82A94592500E968CB /* UIView+Extensions.swift */,
+				98CB53DA2A94593500E968CB /* UIImage+Extensions.swift */,
+				98CB53DC2A94599D00E968CB /* UIViewController+Extensions.swift */,
+				98CB53DE2A9459B400E968CB /* UITableView+Extensions.swift */,
+				98CB53E02A9459C700E968CB /* UICollectionView+Extensions.swift */,
+				98CB53E22A9459FF00E968CB /* UIButton+Extensions.swift */,
+				98CB53E42A945A0D00E968CB /* UIColor+Extensions.swift */,
+				98CB53E62A945A4B00E968CB /* UIFont+Extensions.swift */,
+				98CB53E82A945A6D00E968CB /* UIActivityIndicator+Extensions.swift */,
+				98CB53EA2A945AD400E968CB /* Double+Extensions.swift */,
+				98CB53EC2A945AE900E968CB /* CGFloat+Extensions.swift */,
+				98CB53EE2A945B0600E968CB /* Date+Extensions.swift */,
+				98CB53F02A945B1700E968CB /* ViewState+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		98CB53F22A945BA900E968CB /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				98CB53F32A945BA900E968CB /* SF-Compact-Text-Semibold.otf */,
+				98CB53F42A945BA900E968CB /* SF-Compact-Text-Bold.otf */,
+				98CB53F52A945BA900E968CB /* SF-Compact-Text-Heavy.otf */,
+				98CB53F62A945BA900E968CB /* SF-Compact-Text-Medium.otf */,
+				98CB53F72A945BA900E968CB /* SF-Compact-Text-Regular.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		98CB53FD2A945BB800E968CB /* lottie */ = {
+			isa = PBXGroup;
+			children = (
+				98CB53FE2A945BB800E968CB /* empty.json */,
+			);
+			path = lottie;
+			sourceTree = "<group>";
+		};
+		98CB54002A945C2500E968CB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				98CB54012A945C3F00E968CB /* ViewState+Helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		98CB54032A945DB300E968CB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				98CB54042A945DDA00E968CB /* HomeMovieCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C8AFC9F51D4806ED13FD5110 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFCD47C0FC56136CB2279908 /* Pods-NetplixMiniProject.debug.xcconfig */,
+				C936D14A85500B3454B3303B /* Pods-NetplixMiniProject.release.xcconfig */,
+				D48BA167B1876BC37FE11CB0 /* Pods-NetplixMiniProject-NetplixMiniProjectUITests.debug.xcconfig */,
+				4FE2EC8A985A9480D931D0DB /* Pods-NetplixMiniProject-NetplixMiniProjectUITests.release.xcconfig */,
+				6C58BC706275F07FCDA6806B /* Pods-NetplixMiniProjectTests.debug.xcconfig */,
+				24F2D068885BC444D0976878 /* Pods-NetplixMiniProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98CB53902A94514400E968CB /* NetplixMiniProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98CB53BB2A94514600E968CB /* Build configuration list for PBXNativeTarget "NetplixMiniProject" */;
+			buildPhases = (
+				36CD24CE086B656534F69946 /* [CP] Check Pods Manifest.lock */,
+				98CB538D2A94514400E968CB /* Sources */,
+				98CB538E2A94514400E968CB /* Frameworks */,
+				98CB538F2A94514400E968CB /* Resources */,
+				16631E5A8059043BDF636A68 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetplixMiniProject;
+			productName = NetplixMiniProject;
+			productReference = 98CB53912A94514400E968CB /* NetplixMiniProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98CB53A62A94514600E968CB /* NetplixMiniProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98CB53BE2A94514600E968CB /* Build configuration list for PBXNativeTarget "NetplixMiniProjectTests" */;
+			buildPhases = (
+				C7002276C71533DCE1A3D900 /* [CP] Check Pods Manifest.lock */,
+				98CB53A32A94514600E968CB /* Sources */,
+				98CB53A42A94514600E968CB /* Frameworks */,
+				98CB53A52A94514600E968CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98CB53A92A94514600E968CB /* PBXTargetDependency */,
+			);
+			name = NetplixMiniProjectTests;
+			productName = NetplixMiniProjectTests;
+			productReference = 98CB53A72A94514600E968CB /* NetplixMiniProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98CB53B02A94514600E968CB /* NetplixMiniProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98CB53C12A94514600E968CB /* Build configuration list for PBXNativeTarget "NetplixMiniProjectUITests" */;
+			buildPhases = (
+				6CE5B2E400D5F5A256765679 /* [CP] Check Pods Manifest.lock */,
+				98CB53AD2A94514600E968CB /* Sources */,
+				98CB53AE2A94514600E968CB /* Frameworks */,
+				98CB53AF2A94514600E968CB /* Resources */,
+				E2F60548350CDADD5B91A972 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98CB53B32A94514600E968CB /* PBXTargetDependency */,
+			);
+			name = NetplixMiniProjectUITests;
+			productName = NetplixMiniProjectUITests;
+			productReference = 98CB53B12A94514600E968CB /* NetplixMiniProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98CB53892A94514400E968CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					98CB53902A94514400E968CB = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					98CB53A62A94514600E968CB = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 98CB53902A94514400E968CB;
+					};
+					98CB53B02A94514600E968CB = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 98CB53902A94514400E968CB;
+					};
+				};
+			};
+			buildConfigurationList = 98CB538C2A94514400E968CB /* Build configuration list for PBXProject "NetplixMiniProject" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98CB53882A94514400E968CB;
+			productRefGroup = 98CB53922A94514400E968CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98CB53902A94514400E968CB /* NetplixMiniProject */,
+				98CB53A62A94514600E968CB /* NetplixMiniProjectTests */,
+				98CB53B02A94514600E968CB /* NetplixMiniProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98CB538F2A94514400E968CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98CB53F92A945BA900E968CB /* SF-Compact-Text-Bold.otf in Resources */,
+				9816B8F42A94FB8100E98B9A /* DetailViewController.xib in Resources */,
+				98CB53FF2A945BB800E968CB /* empty.json in Resources */,
+				98CB53F82A945BA900E968CB /* SF-Compact-Text-Semibold.otf in Resources */,
+				98CB53FB2A945BA900E968CB /* SF-Compact-Text-Medium.otf in Resources */,
+				98CB53A12A94514500E968CB /* LaunchScreen.storyboard in Resources */,
+				98CB53FC2A945BA900E968CB /* SF-Compact-Text-Regular.otf in Resources */,
+				98CB53FA2A945BA900E968CB /* SF-Compact-Text-Heavy.otf in Resources */,
+				98CB539E2A94514500E968CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CB53A52A94514600E968CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CB53AF2A94514600E968CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16631E5A8059043BDF636A68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetplixMiniProject/Pods-NetplixMiniProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetplixMiniProject/Pods-NetplixMiniProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetplixMiniProject/Pods-NetplixMiniProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36CD24CE086B656534F69946 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetplixMiniProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CE5B2E400D5F5A256765679 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetplixMiniProject-NetplixMiniProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7002276C71533DCE1A3D900 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetplixMiniProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2F60548350CDADD5B91A972 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetplixMiniProject-NetplixMiniProjectUITests/Pods-NetplixMiniProject-NetplixMiniProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetplixMiniProject-NetplixMiniProjectUITests/Pods-NetplixMiniProject-NetplixMiniProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetplixMiniProject-NetplixMiniProjectUITests/Pods-NetplixMiniProject-NetplixMiniProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98CB538D2A94514400E968CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98CB53F12A945B1700E968CB /* ViewState+Extensions.swift in Sources */,
+				98CB53E12A9459C700E968CB /* UICollectionView+Extensions.swift in Sources */,
+				98CB53992A94514400E968CB /* HomeViewController.swift in Sources */,
+				9816B8E82A94DBA300E98B9A /* HomeViewModel.swift in Sources */,
+				98CB53EF2A945B0600E968CB /* Date+Extensions.swift in Sources */,
+				98CB53952A94514400E968CB /* AppDelegate.swift in Sources */,
+				98CB53D92A94592500E968CB /* UIView+Extensions.swift in Sources */,
+				98CB53CD2A9456C600E968CB /* MovieServices.swift in Sources */,
+				98CB54052A945DDA00E968CB /* HomeMovieCell.swift in Sources */,
+				9816B8ED2A94E1BE00E98B9A /* DetailViewController.swift in Sources */,
+				9816B8EB2A94E1AF00E98B9A /* DetailViewModel.swift in Sources */,
+				98CB53DD2A94599D00E968CB /* UIViewController+Extensions.swift in Sources */,
+				98CB53ED2A945AE900E968CB /* CGFloat+Extensions.swift in Sources */,
+				98CB53DB2A94593500E968CB /* UIImage+Extensions.swift in Sources */,
+				98CB54022A945C3F00E968CB /* ViewState+Helper.swift in Sources */,
+				98CB53CB2A9454FC00E968CB /* APICall.swift in Sources */,
+				98CB53972A94514400E968CB /* SceneDelegate.swift in Sources */,
+				98CB53DF2A9459B400E968CB /* UITableView+Extensions.swift in Sources */,
+				98CB53D52A94574C00E968CB /* Movies.swift in Sources */,
+				98EA069E2A9752DD00C108AB /* DetailMovieCell.swift in Sources */,
+				98CB53E52A945A0D00E968CB /* UIColor+Extensions.swift in Sources */,
+				98CB53E92A945A6D00E968CB /* UIActivityIndicator+Extensions.swift in Sources */,
+				98CB53EB2A945AD400E968CB /* Double+Extensions.swift in Sources */,
+				98CB53D12A94572900E968CB /* Video.swift in Sources */,
+				98CB53CF2A94571D00E968CB /* Review.swift in Sources */,
+				98CB53E72A945A4B00E968CB /* UIFont+Extensions.swift in Sources */,
+				98CB53E32A9459FF00E968CB /* UIButton+Extensions.swift in Sources */,
+				98CB53D32A94573A00E968CB /* Genre.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CB53A32A94514600E968CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98CB53AC2A94514600E968CB /* NetplixMiniProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98CB53AD2A94514600E968CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98CB53B82A94514600E968CB /* NetplixMiniProjectUITestsLaunchTests.swift in Sources */,
+				98CB53B62A94514600E968CB /* NetplixMiniProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98CB53A92A94514600E968CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98CB53902A94514400E968CB /* NetplixMiniProject */;
+			targetProxy = 98CB53A82A94514600E968CB /* PBXContainerItemProxy */;
+		};
+		98CB53B32A94514600E968CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98CB53902A94514400E968CB /* NetplixMiniProject */;
+			targetProxy = 98CB53B22A94514600E968CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98CB539F2A94514500E968CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98CB53A02A94514500E968CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98CB53B92A94514600E968CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98CB53BA2A94514600E968CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98CB53BC2A94514600E968CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFCD47C0FC56136CB2279908 /* Pods-NetplixMiniProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 497V89NCL4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetplixMiniProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Netplix;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = movie.NetplixMiniProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98CB53BD2A94514600E968CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C936D14A85500B3454B3303B /* Pods-NetplixMiniProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 497V89NCL4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NetplixMiniProject/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Netplix;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = movie.NetplixMiniProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		98CB53BF2A94514600E968CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C58BC706275F07FCDA6806B /* Pods-NetplixMiniProjectTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 497V89NCL4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = julianFerry.NetplixMiniProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetplixMiniProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NetplixMiniProject";
+			};
+			name = Debug;
+		};
+		98CB53C02A94514600E968CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24F2D068885BC444D0976878 /* Pods-NetplixMiniProjectTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 497V89NCL4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = julianFerry.NetplixMiniProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetplixMiniProject.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NetplixMiniProject";
+			};
+			name = Release;
+		};
+		98CB53C22A94514600E968CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D48BA167B1876BC37FE11CB0 /* Pods-NetplixMiniProject-NetplixMiniProjectUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 497V89NCL4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = julianFerry.NetplixMiniProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NetplixMiniProject;
+			};
+			name = Debug;
+		};
+		98CB53C32A94514600E968CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FE2EC8A985A9480D931D0DB /* Pods-NetplixMiniProject-NetplixMiniProjectUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 497V89NCL4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = julianFerry.NetplixMiniProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NetplixMiniProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98CB538C2A94514400E968CB /* Build configuration list for PBXProject "NetplixMiniProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98CB53B92A94514600E968CB /* Debug */,
+				98CB53BA2A94514600E968CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98CB53BB2A94514600E968CB /* Build configuration list for PBXNativeTarget "NetplixMiniProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98CB53BC2A94514600E968CB /* Debug */,
+				98CB53BD2A94514600E968CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98CB53BE2A94514600E968CB /* Build configuration list for PBXNativeTarget "NetplixMiniProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98CB53BF2A94514600E968CB /* Debug */,
+				98CB53C02A94514600E968CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98CB53C12A94514600E968CB /* Build configuration list for PBXNativeTarget "NetplixMiniProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98CB53C22A94514600E968CB /* Debug */,
+				98CB53C32A94514600E968CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98CB53892A94514400E968CB /* Project object */;
+}

@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_NetplixMiniProject_NetplixMiniProjectUITests : NSObject
+@end
+@implementation PodsDummy_Pods_NetplixMiniProject_NetplixMiniProjectUITests
+@end

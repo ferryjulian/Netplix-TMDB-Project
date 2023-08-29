@@ -1,0 +1,31 @@
+//
+//  HomeViewModel.swift
+//  NetplixMiniProject
+//
+//  Created by Ferry Julian on 22/08/23.
+//
+
+import Foundation
+import RxCocoa
+import RxSwift
+
+class HomeViewModel {
+    
+    let popularMovies: BehaviorRelay<ViewState<[Movie]>> = .init(value: ViewState.Initiate())
+    private let disposeBag = DisposeBag()
+    
+    func fetchPopularMovies(page: Int) {
+        popularMovies.accept(ViewState.Loading())
+        
+        MovieServices.shared.fetchPopularMovie(page: page).subscribe(
+            onNext: { [weak self] result in
+                self?.popularMovies.accept(ViewState.Success(data: result))
+            },
+            onError: { [weak self] error in
+                self?.popularMovies.accept(ViewState.Failed(error: error))
+            }
+        ).disposed(by: disposeBag)
+    }
+    
+    
+}

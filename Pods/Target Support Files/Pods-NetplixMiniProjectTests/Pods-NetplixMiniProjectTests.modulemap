@@ -1,0 +1,6 @@
+framework module Pods_NetplixMiniProjectTests {
+  umbrella header "Pods-NetplixMiniProjectTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
